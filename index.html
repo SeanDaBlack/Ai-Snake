@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="snake.js"></script>
+    <script src="script.js"></script>
+    <script src="libraries/matrix.js"></script>
+    <script src="libraries/nn.js"></script>
+    <script src="ga.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1 id=score>Score:</h1>
+        <h2 id=generation>Generation:</h2>
+        <h2 id=highestscore>Highest Score:</h2>
+    </div>
+    <div>
+        <button onclick="changeSpeed('up')" id="speed-up">Speed Up</button>
+        <button onclick="changeSpeed('down')" id="slow-down">Speed Down</button>
+        <button onclick="destroySnakes()" id="destruction">Destroy Generation</button>
+        <button onclick="des()" id="des">Enable Best Auto Destruction</button>
+        <button onclick="blackDes()" id="blackDes">Disable Auto Destruction</button>
+        <button onclick="moveFood()" id="food">Move Food</button>
+        <button onclick="onlyBest()" id="best">Show Best</button>
+        <button onclick="changeTimerUp()" id="timerUp">Timer Up</button>
+        <button onclick="changeTimerDown()" id="timerDown">Timer Down</button>
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>
